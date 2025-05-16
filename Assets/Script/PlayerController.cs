@@ -7,11 +7,11 @@ public class PlayerController : MonoBehaviour
     public float horizontalInput;
     public float speed = 10.0f;
     public float xRange = 10f;
-    public GameObject projectilePrefab; // for reusing the object
-    // Start is called before the first frame update
+    public GameObject projectilePrefab;
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(projectilePrefab, transform.position, projectilePrefab.transform.rotation);
         }
+
     }
 
 }
